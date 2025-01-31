@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <title>Joshua Bradley - Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/261d4f1134.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onClick="closemenu()"></i>
+          </ul>
+
+          <i class="fas fa-bars" onClick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>UI/UX Designer</p>
+          <h1>Hi, I am <span>Joshua</span><br />from Birmingham</h1>
+        </div>
+      </div>
+    </div>
+    <!-----------------about----------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hi! My name is Joshua Bradley, and I am from Birmingham, Alabama.
+              I am currently enrolled at the University of North Alabama,
+              pursing a degree in Information Technology with a concentration in
+              HCI/UX. Some of my hobbies include escape rooms, baseball, and
+              working on cars. Some fun facts about me are I love watching
+              football and baseball, and I have 5 younger siblings.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onClick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onClick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onClick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web Interfaces</li>
+                <li><span>Web Development</span><br />Web App Development</li>
+                <li>
+                  <span>IT Infrastructure</span><br />Designing
+                  Systems/Databases
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2023 - now</span><br />Team Manager at The Escape Room
+                  Florence
+                </li>
+                <li>
+                  <span>2022 - 2023</span><br />Room Host at The Escape Room
+                  Florence
+                </li>
+                <li>
+                  <span>2021 - 2022</span><br />Digital Personal Shopper at
+                  Walmart
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Graduting May 2026</span><br />BS in Information
+                  Technology, Concentration in HCI/UX at the University of North
+                  Alabama
+                </li>
+                <li>
+                  <span>Recieved in 2025</span><br />WCAG Certified, ADA
+                  Compliance
+                </li>
+                <li>
+                  <span>Completed in 2024</span><br />HTML and CSS training,
+                  Code Academy
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------------services------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              I have a passion for front-end design, and have taken several
+              classes outside of college on HTML, CSS, and JS.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              As a Human-Computer Interaction and User Experience concentration,
+              I pride myself on my knowledge of human pyschology and design.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-computer"></i>
+            <h2>IT Infrastructure</h2>
+            <p>
+              As an Information Technology major, I have taken many classes on
+              database, infrastructure, and system design/analysis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------------portfolio------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img
+              src="images/work-1.png"
+              alt="University of North Alabama fountain"
+            />
+            <div class="layer">
+              <h3>UNA Exam Finder</h3>
+              <p>
+                A program build in JS designed for helping students find when
+                their exams are.
+              </p>
+              <a
+                href="https://joshuabrad03.github.io/turbo-octo-palm-tree/"
+                target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              src="images/work-2.png"
+              alt="Converse Chuck Taylor All Star Low Top shoe"
+            />
+            <div class="layer">
+              <h3>Online Store Listing</h3>
+              <p>
+                A simple store listing for a shoe that showcases UI/UX
+                principles.
+              </p>
+              <a
+                href="https://codepen.io/Josh-Bradley/full/mdQVYGx"
+                target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="" />
+            <div class="layer">
+              <h3>iFixit Tech Writing Project</h3>
+              <p>
+                Designed a web page fro iFixIt. This included formating, finding
+                images, updating information, etc.
+              </p>
+              <a
+                href="https://www.ifixit.com/Device/Drager_Narkomed_3"
+                target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/joshuabrad03" target="_blank" class="btn"
+          >See More</a
+        >
+      </div>
+    </div>
+
+    <!-- ------------------------- contact ----------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> joshuabrad03@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i> 205-585-5935</p>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/joshua.bradley.353250/"
+                target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/josh_bradley03/"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://x.com/josh_bradley03" target="_blank"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+            </div>
+            <a href="images/joshua-bradley-resume.pdf" download class="btn btn2"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button id="contactSubmit" type="submit" class="btn btn2">
+                Submit
+              </button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Joshua.</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwIfYCeTB7ely-h50Rq4cCNtT3hKUfIA-xDghu1nbZRozwMJboAGwj4ssJLqvgSdtFN/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      const submitButton = document.getElementById("contactSubmit");
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        submitButton.disabled = true;
+        submitButton.textContent = "Please Wait...";
+
+        try {
+          const response = await fetch(scriptURL, {
+            method: "POST",
+            body: new FormData(form),
+          });
+
+          if (response.ok) {
+            msg.innerHTML = "Message Sent Successfully!";
+            setTimeout(() => {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          } else {
+            msg.innerHTML = "Submission Failed. Try Again.";
+          }
+        } catch (error) {
+          console.error("Error!", error.message);
+          msg.innerHTML = "An error occurred. Please try again.";
+        } finally {
+          submitButton.textContent = "Submit";
+          submitButton.disabled = false;
+        }
+      });
+    </script>
+  </body>
+</html>
