@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/261d4f1134.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="portfolioHeader">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="portfolio.html">Repository</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onClick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onClick="openmenu()"></i>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1 class="sub-title">My Design Journey</h1>
+      <p class="portfolio-intro">Welcome to my UX Design Portfolio. Explore my design process through these selected projects, each showcasing the evolution from initial concept to final implementation.</p>
+
+      <!-- Rep Finder Mobile Project -->
+      <div class="project-section"ID="project-1">
+        <h2 class="project-title">Representative Finder Mobile</h2>
+        <p class="project-description">A user-friendly application designed to help people easily find who represents them in government, as well as find their voting location.</p>
+        
+        <div class="design-phases">
+          <!-- Low Fidelity Phase -->
+          <div class="phase">
+            <h3 class="phase-title">
+              <i class="fas fa-pencil-alt"></i>
+              Low Fidelity
+            </h3>
+            <div class="phase-content">
+              <img src="images/repfinder-mobile-wireframe.png" alt="Wireframe of Representative Finder Mobile" />
+              <div class="phase-description">
+                <h4>Wireframes</h4>
+                <p>Early black and white designs that focus on the core functionality of the app. This wireframe features two search bars, one for searching by zip code and one for searching by representative name. It also has a "recent news" section with a slideshow menu. Lastly, a political test is located at the bottom so users can figure out where they stand politically. </p>
+                <ul class="phase-details">
+                  <li>User journey mapping</li>
+                  <li>Basic layout structure</li>
+                  <li>Core feature placement</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mid Fidelity Phase -->
+          <div class="phase">
+            <h3 class="phase-title">
+              <i class="fas fa-paint-brush"></i>
+              Mockups
+            </h3>
+            <div class="phase-content">
+              <img src="images/repfinder-mobile-mockup.png" alt="Mockup of Representative Finder Mobile" />
+              <div class="phase-description">
+                <h4>UI Mockups</h4>
+                <p>Added color and changed the font. The "take the test" section was removed after interviewing users. Something to note is that the navigation menu slides in from the left side of the screen. The "Recent News" section was improved so headlines were more visible, per user request. </p>
+                <ul class="phase-details">
+                  <li>Color scheme implementation</li>
+                  <li>Typography selection</li>
+                  <li>Component design</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- High Fidelity Phase -->
+          <div class="phase">
+            <h3 class="phase-title">
+              <i class="fas fa-check-circle"></i>
+              High Fidelity
+            </h3>
+            <div class="phase-content">
+              <img src="images/repfinder-mobile-final.png" alt="Final Design of Representative Finder Mobile" />
+              <div class="phase-description">
+                <h4>Final Product</h4>
+                <p>Polished interface with complete interactions and animations. The navigation menu now takes up the entire screen, and the color scheme was updated to reflect a more "American" theme. After the last round of user testing, several changes were made, including "bias ratings" on news sources, a filter menu for the news, and a notification button for representatives. </p>
+                <ul class="phase-details">
+                  <li>Interactive elements</li>
+                  <li>Responsive design</li>
+                  <li>User testing refinements</li>
+                </ul>
+                <a href="https://www.figma.com/proto/zv9WcL30AQaZCVaqslhbR9/Representative-Finder-Mobile?node-id=96-294&t=fpTXiprMGVrvFRL0-1" target="_blank" class="btn prototype-link">View Interactive Prototype <i class="fas fa-external-link-alt"></i></a>
+                <br>
+                <a href="https://docs.google.com/presentation/d/18Vn5g1IlqfNzV6KtbZIPBK4d7rrf0CuyFhJl9Skz1h4/edit?usp=sharing" target="_blank" class="btn prototype-link">View Case Study <i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rep Finder Desktop Project -->
+      <div class="project-section" id="project-2">
+        <h2 class="project-title">Representative Finder Desktop</h2>
+        <p class="project-description">A website focused on providing a comprehensive listing of all representatives in the United States, based on the user's location and preferences.
+        
+        <div class="design-phases">
+          <!-- Low Fidelity Phase -->
+          <div class="phase">
+            <h3 class="phase-title">
+              <i class="fas fa-pencil-alt"></i>
+              Low Fidelity
+            </h3>
+            <div class="phase-content">
+              <img src="images/repfinder-web-wireframes.png" alt="Wireframe of Representative Finder Desktop" />
+              <div class="phase-description">
+                <h4>Wireframes</h4>
+                <p>The title and two search bars take the main focus of the home page. The search bar on the top is for searching by zipcode, and the search bar on the bottom is for searching by representative name. The navigation menu is located at the top of the screen, and the "recent news" section ultizes boxes to display news headlines. </p>
+                <ul class="phase-details">
+                  <li>Information architecture</li>
+                  <li>Website layout</li>
+                  <li>Homepage design</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mid Fidelity Phase -->
+          <div class="phase">
+            <h3 class="phase-title">
+              <i class="fas fa-paint-brush"></i>
+              Mockups
+            </h3>
+            <div class="phase-content">
+              <img src="images/repfinder-web-mockup.png" alt="Mockup of Representative Finder Desktop" />
+              <div class="phase-description">
+                <h4>UI Mockups</h4>
+                <p>Styled interface with focus on product presentation and user interaction. Using previous user feedback, the color scheme was kept the same as the mobile app. The "recent news" section was updated to include the logo of the news source, a "check bias" button, and the news headline. </p>
+                <ul class="phase-details">
+                  <li>Visual hierarchy</li>
+                  <li>Product card design</li>
+                  <li>Navigation system</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- High Fidelity Phase -->
+          <div class="phase">
+            <h3 class="phase-title">
+              <i class="fas fa-check-circle"></i>
+              High Fidelity
+            </h3>
+            <div class="phase-content">
+              <img src="images/repfinder-web-final.png" alt="Final Design of Representative Finder Desktop" />
+              <div class="phase-description">
+                <h4>Final Product</h4>
+                <p>A later iteration of the desktop website. The color scheme was updated so there's a different color around the "recent news" section. This is because users were having difficulty reading it. There was also a "Find Voting Location" section added to the bottom of the homepage, as well as a footer. </p>
+                <ul class="phase-details">
+                  <li>Website layout</li>
+                  <li>Color scheme</li>
+                  <li>Footer</li>
+                </ul>
+                <a href="https://www.figma.com/proto/GfTeZ1gEBme3cliwwKBuSF/Representative-Finder-Web?node-id=32-2&t=BjQ1XpqDeejFepXj-1" target="_blank" class="btn prototype-link">View Interactive Prototype <i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CLue-Meister -->
+      <div class="project-section" id="project-3">
+        <h2 class="project-title">The Escape Room "Clue-Meister" System</h2>
+        <p class="project-description">A simple user interface for a system used to send automated messages to players in an escape room game. This project was designed for a real escape room company, and to be used on mobile devices.</p>
+        
+        <div class="design-phases">
+          <!-- Low Fidelity Phase -->
+          <div class="phase">
+            <h3 class="phase-title">
+              <i class="fas fa-pencil-alt"></i>
+              Low Fidelity
+            </h3>
+            <div class="phase-content">
+              <img src="images/cm-wireframes.png" alt="Clue-Meister Wireframes" />
+              <div class="phase-description">
+                <h4>Wireframes</h4>
+                <p>This wireframe was designed after interviewing employees for the company. The buttons shown on the screen are the most important functions for running an escape room. The section in the middle is an interactive flowchart of the game for tracking group progress, and the bottom section is pre written messages the employee can send to the group. </p>
+                <ul class="phase-details">
+                  <li>Content organization</li>
+                  <li>Step flow design</li>
+                  <li>Navigation structure</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mid Fidelity Phase -->
+          <div class="phase">
+            <h3 class="phase-title">
+              <i class="fas fa-paint-brush"></i>
+              Mockups
+            </h3>
+            <div class="phase-content">
+              <img src="images/cm-mockup.png" alt="Clue-Meister Mockups" />
+              <div class="phase-description">
+                <h4>UI Mockups</h4>
+                <p>A color scheme was added based on the company's branding, and the navigation menu was simplified.</p>
+                <ul class="phase-details">
+                  <li>Color scheme</li>
+                  <li>Navigation menu</li>
+                  <li>Flowchart integration planning</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- High Fidelity Phase -->
+          <div class="phase">
+            <h3 class="phase-title">
+              <i class="fas fa-check-circle"></i>
+              High Fidelity
+            </h3>
+            <div class="phase-content">
+              <img src="images/cm-final.png" alt="Clue-Meister Final Design" />
+              <div class="phase-description">
+                <h4>Final Product</h4>
+                <p>The flowchart was added to the middle of the screen, with an indicator of when the next clue will be sent automatically. The recommended messages were improved, so the button looks more appealing. Lastly, the room logo was added to the top of the screen.</p>
+                <ul class="phase-details">
+                  <li>Flowchart implementation</li>
+                  <li>Recommended messages</li>
+                  <li>Room logo</li>
+                </ul>
+                <a href="https://www.figma.com/proto/kyIsqZABUyuHIokPhhDj8C/Sleuth?node-id=33-2&t=hPt8N0uxapCGS7q5-1" target="_blank" class="btn prototype-link">View Interactive Prototype <i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- PDOA Project -->
+      <div class="project-section" id="project-3">
+        <h2 class="project-title">Pediatric Dental Associates Website Redesign</h2>
+        <p class="project-description">During my UX design internship at CCG, I led the wireframing process for the Pediatric Dental Associates website redesign, focusing on improving user flow and accessibility for families seeking dental care. The project allowed me to collaborate with stakeholders, conduct user research, and translate insights into intuitive, mobile-friendly wireframes.</p>
+        
+        <div class="design-phases">
+          <!-- Wireframes -->
+          <div class="phase">
+            <h3 class="phase-title">
+              <i class="fas fa-pencil-alt"></i>
+              Low Fidelity
+            </h3>
+            <div class="phase-content">
+              <img src="images/cm-wireframes.png" alt="Clue-Meister Wireframes" />
+              <div class="phase-description">
+                <h4>Wireframes</h4>
+                <p>This wireframe was designed after interviewing employees for the company. The buttons shown on the screen are the most important functions for running an escape room. The section in the middle is an interactive flowchart of the game for tracking group progress, and the bottom section is pre written messages the employee can send to the group. </p>
+                <ul class="phase-details">
+                  <li>Content organization</li>
+                  <li>Step flow design</li>
+                  <li>Navigation structure</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- High Fidelity Phase -->
+          <div class="phase">
+            <h3 class="phase-title">
+              <i class="fas fa-check-circle"></i>
+              High Fidelity
+            </h3>
+            <div class="phase-content">
+              <img src="images/cm-final.png" alt="Clue-Meister Final Design" />
+              <div class="phase-description">
+                <h4>Final Product</h4>
+                <p>The flowchart was added to the middle of the screen, with an indicator of when the next clue will be sent automatically. The recommended messages were improved, so the button looks more appealing. Lastly, the room logo was added to the top of the screen.</p>
+                <ul class="phase-details">
+                  <li>Flowchart implementation</li>
+                  <li>Recommended messages</li>
+                  <li>Room logo</li>
+                </ul>
+                <a href="https://www.figma.com/proto/kyIsqZABUyuHIokPhhDj8C/Sleuth?node-id=33-2&t=hPt8N0uxapCGS7q5-1" target="_blank" class="btn prototype-link">View Interactive Prototype <i class="fas fa-external-link-alt"></i></a>
+                <a href="https://www.figma.com/proto/kyIsqZABUyuHIokPhhDj8C/Sleuth?node-id=33-2&t=hPt8N0uxapCGS7q5-1" target="_blank" class="btn prototype-link">View Case Study<i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> joshuabrad03@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i> 205-585-5935</p>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/joshua.bradley.353250/"
+                target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/josh_bradley03/"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://x.com/josh_bradley03" target="_blank"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+            </div>
+            <a href="images/joshua-bradley-resume.pdf" download class="btn btn2"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button id="contactSubmit" type="submit" class="btn btn2">
+                Submit
+              </button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Joshua.</p>
+      </div>
+    </div>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="script.js"></script>
+  </body>
+</html>
