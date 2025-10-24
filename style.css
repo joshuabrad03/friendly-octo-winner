@@ -15,7 +15,7 @@ body {
 }
 
 body.portfolio-background {
-  background: #000
+  background: #000;
 }
 
 #header {
@@ -926,4 +926,5 @@ nav .fas {
   transform: translateY(-3px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+
 
