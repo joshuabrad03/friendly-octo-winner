@@ -14,6 +14,10 @@ body {
   color: #fff;
 }
 
+body.portfolio-background {
+  background: #000
+}
+
 #header {
   width: 100%;
   height: 100vh;
@@ -922,3 +926,4 @@ nav .fas {
   transform: translateY(-3px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+
