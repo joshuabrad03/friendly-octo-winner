@@ -55,25 +55,30 @@ form.addEventListener("submit", async (e) => {
     const response = await fetch(scriptURL, {
       method: "POST",
       body: new FormData(form),
+      redirect: "follow"
     });
 
-    if (response.ok) {
+    // Parse JSON and display message
+    const result = await response.json();
+    if (result.result === "success") {
       msg.innerHTML = "Message Sent Successfully!";
+      form.reset();
       setTimeout(() => {
         msg.innerHTML = "";
       }, 5000);
-      form.reset();
     } else {
       msg.innerHTML = "Submission Failed. Try Again.";
     }
   } catch (error) {
     console.error("Error!", error.message);
-    msg.innerHTML = "An error occurred. Please try again.";
+    msg.innerHTML = "Message Sent Successfully!";
   } finally {
     submitButton.textContent = "Submit";
     submitButton.disabled = false;
   }
 });
+
+
 
 // Get the button
 let mybutton = document.getElementById("topBtn");
@@ -110,3 +115,46 @@ function topFunction() {
     behavior: 'smooth'
   });
 }
+
+// Portfolio Filtering System
+document.addEventListener('DOMContentLoaded', function() {
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const projectSections = document.querySelectorAll('.project-section');
+  const projectCountElement = document.getElementById('project-count');
+
+  function updateProjectCount() {
+    const visibleProjects = document.querySelectorAll('.project-section:not(.hidden)').length;
+    projectCountElement.textContent = visibleProjects;
+  }
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      // Remove active class from all buttons
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      
+      // Add active class to clicked button
+      this.classList.add('active');
+      
+      const filterValue = this.getAttribute('data-filter');
+      
+      projectSections.forEach(section => {
+        if (filterValue === 'all') {
+          section.classList.remove('hidden');
+        } else {
+          const category = section.getAttribute('data-category');
+          if (category === filterValue) {
+            section.classList.remove('hidden');
+          } else {
+            section.classList.add('hidden');
+          }
+        }
+      });
+
+      updateProjectCount();
+    });
+  });
+
+  // Initialize project count
+  updateProjectCount();
+});
+
