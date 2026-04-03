@@ -7,11 +7,13 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   background: #080808;
   color: #fff;
+  overflow-x: hidden;
 }
 
 body.portfolio-background {
@@ -794,7 +796,7 @@ nav .fas {
 }
 
 .prototype-link {
-  display: inline-flex;
+  display: block;
   align-items: center;
   gap: 8px;
   background: #ff004f;
@@ -804,6 +806,8 @@ nav .fas {
   text-decoration: none;
   font-weight: 500;
   transition: background 0.3s;
+  margin: 0 0 10px 0;
+  width: fit-content;
 }
 
 .prototype-link:hover {
